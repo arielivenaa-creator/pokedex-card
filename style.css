@@ -1,0 +1,111 @@
+/* style.css */
+
+/* Reset dasar agar layout konsisten */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* WARNA LATAR: Hijau rumput lembut */
+    background-color: #a7d7c5; 
+    
+    /* OPSIONAL: Gambar latar pemandangan (buka komentar di bawah jika ada gambarnya) */
+    /* background-image: url('background-pemandangan.jpg'); */
+    /* background-size: cover; */
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    /* WARNA KARTU: Krem lembut seperti kertas perkamen */
+    background: #fdfaf3; 
+    padding: 2rem;
+    border-radius: 20px;
+    
+    /* Border halus berwarna tanah cokelat */
+    border: 4px solid #b7ac96; 
+    
+    /* Bayangan lembut */
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15); 
+    
+    text-align: center;
+    width: 320px;
+}
+
+#poke-name {
+    /* Warna teks cokelat gelap kayu */
+    color: #5d4037; 
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    text-transform: capitalize; /* Membuat huruf pertama kapital */
+}
+
+.img-container {
+    /* Lingkaran latar belakang gambar dengan warna alam */
+    background: #e0f2f1; /* Hijau air sangat muda */
+    border-radius: 50%;
+    margin: 1.5rem auto;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px dashed #81c784; /* Border putus-putus seperti daun */
+}
+
+#poke-img {
+    width: 170px;
+    height: 170px;
+}
+
+.type {
+    /* Gaya untuk teks Tipe */
+    color: #795548; /* Cokelat sedang */
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+#poke-type {
+    /* Gaya untuk label Tipe spesifik (misal: Fire, Grass) */
+    background-color: #f1f8e9; /* Hijau sangat muda */
+    padding: 5px 12px;
+    border-radius: 20px;
+    border: 1px solid #c5e1a5;
+    color: #33691e; /* Hijau tua tua */
+    font-size: 0.9rem;
+}
+
+button {
+    /* WARNA TOMBOL: Hijau hutan tua */
+    background-color: #2e7d32; 
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    width: 100%;
+    transition: all 0.3s ease;
+    
+    /* Menambahkan sedikit efek 3D seperti tombol kayu */
+    box-shadow: 0 4px #1b5e20; 
+}
+
+button:hover {
+    /* Warna saat di-hover */
+    background-color: #388e3c; 
+    transform: translateY(-2px); /* Tombol sedikit naik */
+}
+
+button:active {
+    /* Efek tombol ditekan */
+    box-shadow: 0 1px #1b5e20;
+    transform: translateY(2px);
+}
